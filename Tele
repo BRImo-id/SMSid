@@ -1,0 +1,12 @@
+<?php
+ 
+$token = "1457121280:;5683256388:AAGc3aa_thWAcxPI5kY40ANHSYiUTuGsS0" // token bot
+ 
+$data = [
+    'text' =>"contoh pesan telegram dari PHP ",
+    'chat_id' => '-5733927234'  //contoh bot, group id -5733927234
+];
+ 
+file_get_contents("https://api.telegram.org/bot$token/sendMessage?" . http_build_query($data) );
+ 
+?>
